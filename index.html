@@ -1,33 +1,12 @@
-<h1>Buku Tamu</h1>
-
-<div>
-    Nama: <input type="text" id="nama" /><br />
-    Email: <input type="email" id="email" /><br />
-    Pesan: <textarea id="pesan"></textarea>
-
-    <br /><br />
-    <button id="submit">Submit</button>
-
-    <br /><br />
-    <h1>Daftar Buku tamu</h1>
-    <div id="guest-book-list"> 
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('submit').addEventListener('click', function(){
-      var nama = document.getElementById('nama').value;
-      var email = document.getElementById('email').value;
-      var pesan = document.getElementById('pesan').value;
-
-      var htmlTemplate = `
-        <ul>
-          <li>Nama: ${nama}</li>
-          <li>Email: ${email}</li>
-          <li>Pesan: ${pesan}</li>
-        </ul> 
-      `
-      var oldValue = document.getElementById('guest-book-list').innerHTML;
-      document.getElementById('guest-book-list').innerHTML = oldValue + htmlTemplate;
-    });
-  </script>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TTS 2</title>
+</head>
+<body>
+	<div style="margin:auto; display:flex; flex-direction:column; height:500px; max-width:500px">
+    <iframe border="0" src="https://crosswordlabs.com/embed/lidiya" style="flex:1; width:100%; padding:5px 0px 0 5px; border:3px solid black; "></iframe>
+    <a target="_blank" style="align-self:center; font-size:12px; color:black; padding-top:10px; text-decoration:none;text-align:center" href="https://crosswordlabs.com"></a>
+</div>
+</body>
+</html>
